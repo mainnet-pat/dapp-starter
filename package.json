@@ -1,0 +1,20 @@
+{
+  "name": "@dapp-starter/root",
+  "private": true,
+  "version": "0.0.1",
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "bump": "node bump_version.cjs",
+    "publish": "yarn workspaces run publish:public",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspaces run test",
+    "clean": "rm -rf packages/**/dist",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "patch-package": "^8.0.1"
+  }
+}

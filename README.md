@@ -1,0 +1,1 @@
+BCH dApp starter repository featuring a testing suite set up to develop and test cashscript contracts and a Next.js web app to integrate them
